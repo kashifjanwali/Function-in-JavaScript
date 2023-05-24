@@ -1,2 +1,2 @@
-# Function-in-JavaScript
-This repository is about js functions
+# JavaScript Projects
+This repository contains all my javascript related codes
