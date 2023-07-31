@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops using for() logic</title>
+</head>
+
+<body>
+
+
+    <script>
+        var cityToCheck = prompt("Enter your city name to check:");
+        var cleanestCities = ["Long Beach, California (7.02)", "San Diego (6.58)", "Sacramento, California (6.41)", "Tampa, Florida (6.35)", "Charlotte, North Carolina (6.09)", "San Jose, California (5.75)", "Oakland, California (5.73)", "Tucson, Arizona (5.71)", "Bakersfield, California (5.66)", "San Francisco, California (5.48)"];
+
+        for (var i = 0; i <= 9; i++) {
+            if (cityToCheck == cleanestCities[i]) {
+                alert("It's one of the cleanest cities");
+            }
+        }
+    </script>
+</body>
+
+</html>
