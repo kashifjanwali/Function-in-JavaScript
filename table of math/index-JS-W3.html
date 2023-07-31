@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Nestrd Lop Logic Building
+
+        var firstTableNum = parseInt(prompt("Enter Your First Table to Print"));
+        var secondTableNum = parseInt(prompt("Enter The Second Table to Print (Greater Then "+firstTableNum+")"));
+
+
+
+            for (var i = firstTableNum; i <= secondTableNum; i++) {
+                if (i == 0) {
+                    alert("the number you have entered is not valid ");
+                }
+
+                else if (i % 2 == 0) {
+                    document.write(i + " is an even number");
+                }
+                else {
+                    document.write(i + " is odd number");
+                }
+                document.write("</br>"+"Parent Loop ....printing tble of...>>" + i + "</br>");
+
+                for (var j = 1; j <= 5; j += 1) {
+                    var result1 = i * j;
+                    document.write(i + " * " + j + " = " + result1 + "</br>");
+                }
+            }
+
+
+    </script>
+
+</body>
+
+</html>
