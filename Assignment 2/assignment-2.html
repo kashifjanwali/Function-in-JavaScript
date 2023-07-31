@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Numbers From an Array</title>
+  </head>
+  <body>
+    <h1>Assignment #2</h1>
+    <p>
+      Question #1: Write a code to create an array of integers having 100
+      values. Loop over it to print all values using JavaScript.
+    </p>
+
+    <script>
+      var arrayOfIntegers = [];
+      var lengthOfArray = prompt("Enter Length of an Array");
+      for (var i = 1; i <= lengthOfArray; i++) {
+        arrayOfIntegers.push(i) ;  //Add numbers in the array
+      }
+      document.write("[" + arrayOfIntegers + "]");
+      // for (var i = 0; i < lengthOfArray; i++) {
+      //   alert(arrayOfIntegers.pop(i));
+      // }
+      
+    </script>
+    <div><footer style="color: darkgray">kashifjanwali</footer></div>
+  </body>
+</html>
