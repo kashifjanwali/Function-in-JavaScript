@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and Object</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        var laptop = function () {
+            // var name, model, year;
+            this.commonFeatures = function () {
+                document.write("These are common features of my laptop:" + "</br>" + "1. Name: " + myLaptop.name + "</br>" + "2. Model: " + myLaptop.model + "</br>" + "3. Manufacturing Year: " + myLaptop.year + "</br>" + "4.Price: " + myLaptop.price + "</br>");
+            }
+
+            this.customFeatures = function () {
+                document.write("</br>" + "These are custom features of my laptop:" + "</br>" + "1. RAM: " + myLaptop.ram + "</br>" + "2. SSD: " + myLaptop.ssd + "</br>" + "3. HDD: " + myLaptop.hdd + "</br>" + "4. Size: " + myLaptop.size + "</br>" + "5. Color: " + myLaptop.color + "</br>" + "6. Battery Timing: " + myLaptop.batteryTiming + "</br>");
+            }
+
+            this.uniqueFeatures = function () {
+                document.write("</br>" + "These are some unique features of my laptop:" + "</br>" + "1. Finger Print: " + myLaptop.fingerPrint + "</br>" + "2. BackLight: " + myLaptop.backLight + "</br>" + "3. Camera: " + myLaptop.camera + "</br>" + "4. Bluetooth: " + myLaptop.bluetooth + "</br>" + "5. Hotspot: " + myLaptop.hotspot + "</br>")
+            }
+        }
+
+        var myLaptop = new laptop()
+
+        myLaptop.name = "HP EliteBook";
+        myLaptop.model = "840-G4";
+        myLaptop.year = 2019;
+        myLaptop.price = "55500/_ PKR"
+        myLaptop.commonFeatures();
+ 
+
+        myLaptop.ram = "8-GB";
+        myLaptop.ssd = "256-GB";
+        myLaptop.hdd = "500-GB";
+        myLaptop.size = "14-Inches";
+        myLaptop.color = "Silver";
+        myLaptop.batteryTiming = "2.5+ hrs"
+        myLaptop.customFeatures();
+
+        myLaptop.fingerPrint = "Enabled";
+        myLaptop.backLight = "Enabled";
+        myLaptop.camera = "Yes";
+        myLaptop.bluetooth = "Enabled";
+        myLaptop.hotspot = "Enabled";
+        myLaptop.uniqueFeatures();
+    </script>
+</body>
+
+</html>
