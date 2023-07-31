@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find sign of product</title>
+</head>
+<body>
+    <h3>Write a JavaScript conditional statement to find the sign of product of three numbers. Display an alert box with the specified sign.</h3>
+
+    <script>
+        var x, y, z;
+        x = prompt("Enter 1st number:");
+        y = prompt("Enter 2nd number:");
+        z = prompt("Enter 3rd number:");
+
+        if (x<0 && y<0 && z<0) {
+            alert("The sign is -");
+        }
+
+        else if (x>0 && y<0 && z<0) {
+            alert("The sign is +");
+        }
+
+        else if (x<0 && y>0 && z<0) {
+            alert("The sign is +");
+        }
+
+        else if (x>0 && y>0 && z>0) {
+            alert("The sign is +");
+        }
+
+        else {
+            alert("The sign is -");
+        }
+    </script>
+</body>
+</html>
