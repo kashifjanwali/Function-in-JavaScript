@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions using gutter</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="stylesheet" href="./fun.css">
+</head>
+
+<body>
+  <p class="h3 text-center fs-1 fw-bolder text-uppercase"><mark>Assignment # ii (JavaScript Functions)</mark></p>
+  <hr>
+
+
+  <div class="container text-center" style="background-color:lightgreen;">
+
+    <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3 row-cols-sm-2">
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          1
+        </span>
+        <div class="p-3">
+          <div class="card image-width">
+            <img src="./Functions-images/R.jpeg" alt="Even Or Odd" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Even / Odd</h5>
+              <p class="card-text">
+                Javascript Program to Check if a Number is Odd or Even
+              </p>
+              <a href="#" onclick="isEvenOrOdd()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          2
+        </span>
+        <div class="p-3">
+          <div class="card image-width">
+            <img src="./Functions-images/NaN.jpg" alt="Not a Number" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Number / NaN</h5>
+              <p class="card-text">
+                JavaScript Program to check if input is Number or Not.
+              </p>
+              <a href="#" onclick="isNumber()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          3
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/largest2.JPG" alt="Largest Number" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Largest of Two Numbers</h5>
+              <p class="card-text">
+                JavaScript Program to find largest of two numbers.
+              </p>
+              <a href="#" onclick="isLargestNumber2()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          4
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/3.jpg" alt="Largest Number" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Largest of Three Numbers</h5>
+              <p class="card-text">
+                JavaScript Program to find largest of three numbers.
+              </p>
+              <a href="#" onclick="isLargestNumber3()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          5
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/2820a57723079badba67483fcde85fce.jpg" alt="Triangle" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Type of a Triangle</h5>
+              <p class="card-text">
+                JavaScript program to find the type of a triangle.
+              </p>
+              <a href="#" onclick="findTriangleType()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          6
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/range.jpg" alt="Number Range" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Range of a Number</h5>
+              <p class="card-text">
+                JavaScript program to check if the nuber is between the range or not.
+              </p>
+              <a href="#" onclick="checkInRange()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          7
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/maxresdefault.jpg" alt="Most Populated Cities" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Check your City</h5>
+              <p class="card-text">
+                JavaScript program to check if input city is most populated.
+              </p>
+              <a href="#" onclick="isChangingcase()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          8
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/maxresdefault (1).jpg" alt="Capped City" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Capped City</h5>
+              <p class="card-text">
+                JavaScript program to convert input city name to Capped City Name.
+              </p>
+              <a href="#" onclick="isCappedMethod()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col position-relative">
+        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-secondary">
+          8
+        </span>
+        <div class="p-3">
+          <div style="width: 18rem;" class="card">
+            <img src="./Functions-images/istockphoto-165961753-612x612.jpg" alt="Randoms" class="card-img-top">
+            <div class="card-body card-bg">
+              <h5 class="card-title">Random Numbers</h5>
+              <p class="card-text">
+                JavaScript program of random numbers.
+              </p>
+              <a href="#" onclick="randoms()" class="btn btn-primary">Check</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script> //JavaScript Code
+    function isEvenOrOdd(num) {
+      var num = prompt("Check if a number is odd or even in JavaScript");
+      if (num % 2 == 0) {
+        document.write(num + " is an Even Number.");
+      }
+
+      else {
+        document.write(num + " is Odd Number.")
+      }
+
+      /*
+      
+              ****Check the number is Even or Odd****
+          
+          isEvenOrOdd(10) === 10 is an Even Number.
+          isEvenOrOdd(11) === 11 is Odd Number. 
+      */
+    }
+
+
+    function isNumber(num) {
+      var num = prompt("Check if input variable is a number or not");
+      if (isNaN(num)) {
+        document.write(num + " is Not a Number.")
+      }
+
+      else {
+        document.write(num + " is a Valid Number.")
+      }
+
+      /*
+      
+                ****Find Number/Other****
+
+          isNumber(11k) === 11k is Not a Number (NaN).
+          isNumber(11) === 11 is a Valid Number.
+      */
+    }
+
+
+    function isLargestNumber2(num) {
+      alert("Find the largest of two number");
+      var num1 = prompt("Enter First Number");
+      var num2 = prompt("Enter Second Number");
+      var largestNumber = num1;
+
+      if (num1 == num2) {
+        document.write(num1 + " and " + num2 + " are equal.")
+      }
+
+      else if (num2 > largestNumber) {
+        largestNumber = num2;
+        document.write("Largest of  " + num1 + "  and  " + num2 + "  is " + largestNumber);
+      }
+
+      else {
+        document.write("Largest of  " + num1 + "  and  " + num2 + "  is " + largestNumber);
+      }
+
+      /*
+      
+          ****Largest Number of Two Numbers****
+
+          isLargestNumber(11, 11) === 11/num1 and 11/num2 are equal.
+          isLargestNumber(11, 10) === Largest of 11/num1 and 10/num2 is 11/num1.
+          isLargestNumber(10, 11) === Largest of 10/num1 and 11/num2 is 11/num2.
+      */
+    }
+
+
+    function isLargestNumber3(num1, num2, num3) {
+      alert("Find the largest of three number")
+      var num1 = prompt("Enter First Number");
+      var num2 = prompt("Enter Second Number");
+      var num3 = prompt("Enter Third Number")
+      var largestNumber;
+
+      if (num1 > num2 && num1 > num3) {
+        document.write(num1 + " is Largest number.");
+      }
+      else if (num2 > num3) {
+        document.write(num2 + " is Largest number.");
+      }
+      else {
+        document.write(num3 + " is Largest number.");
+      }
+
+      /*
+      
+          ****Largest Number of Three Numbers****
+
+          isLargestNumber(11, 10, 9) === 11/num1 is largest number.
+          isLargestNumber(9, 11, 10) === 11/num2 is largest number.
+          isLargestNumber(9, 10, 11) === 11/num3 is largest number.
+      */
+    }
+
+
+    function findTriangleType(side1, side2, side3) {
+      alert("Check if a triangle is equilateral, scalene, or isosceles");
+      var side1 = prompt("Enter value of side 1");
+      var side2 = prompt("Enter value of side 2");
+      var side3 = prompt("Enter value of side 3");
+
+      if ((side1 == side2) && (side1 == side3)) {
+        document.write("Equilateral Triangle.");
+      }
+
+      else if ((side1 == side2) || (side2 == side3) || (side1 == side3)) {
+        document.write("Isosceles Triangle.");
+      }
+      else {
+        document.write("Scalene Triangle.");
+      }
+
+      /* 
+                      ****Type Of triangle****
+      
+          findTriangleType(11, 11, 11) === Equi;ateral Triangle.
+          findTriangleType(11, 11, 12) === Isosceles Triangle.
+          findTriangleType(11, 12, 13) === Scalene Triangle.
+      */
+    }
+
+
+    function checkInRange(num, start, end) {
+      alert("Find the number is present in given range");
+      var start = -10000000;                                        // prompt("Enter Start of Range");
+      var end = 10000000;                                          //  prompt("Enter end of range");       
+      var num = prompt("Enter Number to find either the number is in the range or not");
+
+      if ((num >= start) && (num <= end)) {
+        document.write(num + " is Between the range.");
+      }
+
+      else {
+        document.write(num + " is Outside the range.");
+      }
+
+      /*
+
+              ****Check Number is in the range or Not****
+          
+          checkInRange(11, -10000000, 10000000) === 11 is Between Range.
+          checkInRange(90000000, -10000000, 10000000) === 90000000 is Outside the range.
+      */
+    }
+
+
+    function isChangingcase() {
+
+      var cityToCheck = prompt("Enter YourCity Name");
+      cityToCheck = cityToCheck.toLowerCase();
+
+      /* Reference Link : https://www.economy.pk/top-10-cities-of-pakistan-based-on-population/ */
+
+      var mostPopulatedCities = ["karachi", "lahore", "faisalabad", "rawalpindi", "gujranwala", "peshawar", "multan", "hyderabad", "islamabad", "quetta"];
+
+      for (var i = 0; i < 10; i++) {
+
+        if (cityToCheck == mostPopulatedCities[i]) {
+          alert(cityToCheck + " is one of the most populated city in Pakistan.");
+        }
+      }
+
+      /* 
+
+            ****Check the city is in list of most populated cities****
+
+        isChangingCase(Karachi) === karachi is the most populated city in pakistan.
+        isChangingCase(gilgit) === 
+
+      */
+    }
+
+    function isCappedMethod() {
+      var cityToCheck = prompt("Enter your city name")
+      var firstChar = cityToCheck.slice(0, 1);
+      var otherChars = cityToCheck.slice(1);
+      firstChar = firstChar.toUpperCase();
+      otherChars = otherChars.toLowerCase();
+      var cappedCity = firstChar + otherChars;
+      alert("Your City is " + cappedCity);
+    }
+
+
+      function randoms() {
+            var minNumber = Number(prompt("Enter Your Minimum Number:"));
+            var maxNumber = Number(prompt("Enter Your Maximum Number:"));
+            var sum = 0;
+            for (var i = minNumber; i < maxNumber; i++) {
+                var resultRandom = Math.random() * (maxNumber - minNumber) + minNumber;
+                var finalResult = Math.floor(resultRandom);
+                sum += finalResult;
+                document.write("Result Random Number === " + finalResult + "</br>");
+            }
+            document.write("Sum of all random numbers: " + sum);
+        }
+
+  </script>
+
+</body>
+
+</html>
