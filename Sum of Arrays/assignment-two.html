@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Sum of an Array</title>
+  </head>
+  <body>
+    <h1>Assignment #2</h1>
+    <p>
+      Question #2: Use the same array that you create in question one and create
+      a Separate function in which you calculate the sum of array and return it
+      back to function and display the output.
+    </p>
+
+    <script>
+      var aarayOfIntegers = [];
+      var lengthOfArray = prompt("Enter Length of an array");
+      for (var i = 1; i <= lengthOfArray; i++) {
+        aarayOfIntegers.push(i);
+      }
+      function sumOfIntegers(sumOfAllNumberInArray) {
+        var sumOfArray = 0;
+        for (var i = 0; i < lengthOfArray; i++) {
+          sumOfArray += aarayOfIntegers[i];
+        }
+        return sumOfArray;
+      }
+      var sumOfAllNumberInArray;
+      var sum = sumOfIntegers(sumOfAllNumberInArray);
+      document.write(
+        "Sum of All the Integers is in the Array is " + sum + "</br>"
+      );
+    </script>
+    <div><footer style="color: darkgray">kashifjanwali</footer></div>
+  </body>
+</html>
