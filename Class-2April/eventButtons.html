@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Buttons</title>
+    <link rel="stylesheet" href="./eventButtons.css" />
+    <script src="./eventButtons.js"></script>
+  </head>
+  <body>
+    <!-- Button (onClick) -->
+
+    <h1>A Smarter way to learn JavaScript</h1>
+    <h3>Chapter #46: Event Buttons</h3>
+    <!-- <img
+      src="./Laptop-computer.webp"
+      alt="Laptop-Computer"
+      onclick="alert('Hello World! this pop up message is shown using onClick* event')"
+    /> -->
+    <!-- The onclick event occurs when the user clicks on an HTML element.
+    The onclick event generally occurs when the user clicks on an element. It allows the programmer to execute a JavaScript's function when an element gets clicked. This event can be used for validating a form, warning messages and many more. -->
+
+
+    <img id="imagePopUpMessage"
+    src="./Laptop-computer.webp"
+    alt="Laptop-Computer"
+    onclick="(onClickShowAlert('imagePopUpMessage'))"/>
+
+
+    <!-- onmouseover -->
+
+    <!-- <img
+      src="./Laptop-computer.webp"
+      alt="Laptop-Computer"
+      onmouseover="alert('Hello World')"
+    /> -->
+
+    <!--  onmouseout -->
+    <!-- <a href="vsshortcuts-bs.html" onmouseover="this.style.color='red'"; 
+    onmouseout="this.style.color='green'">Click Here</a> -->
+
+    <!-- Email: </br>
+    <input id="email" type="text" onfocus="onFocusChangeColor()" ; onblur="onBlurChnageColor()"> -->
+
+    <!-- Email: </br>
+    <input id="email" type="text" onfocus="onFocusChangeColor('email')" ; onblur="onBlurChnageColor('email')"; onmouseover="onMouseOver('email')"> -->
+
+  </body>
+</html>
