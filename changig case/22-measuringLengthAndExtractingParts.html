@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measuring length and extracting parts</title>
+</head>
+
+<body>
+
+    <script>
+
+        function isCappedMethod() {
+            var cityToCheck = prompt("Enter your city name")
+            var firstChar = cityToCheck.slice(0, 1);
+            var otherChars = cityToCheck.slice(1);
+            firstChar = firstChar.toUpperCase();
+            otherChars = otherChars.toLowerCase();
+            var cappedCity = firstChar + otherChars;
+            alert("Your City is " + cappedCity);
+        }
+        isCappedMethod()
+    </script>
+
+</body>
+
+</html>

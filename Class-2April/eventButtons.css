@@ -1,0 +1,15 @@
+h1 {
+    color: darkgrey;
+    background-color:teal;
+}
+
+h3 {
+    color: darkcyan;
+    background-color: darkgray;
+}
+
+img {
+    width: 25rem;
+    height: 18rem;
+    background-color: aquamarine;
+}

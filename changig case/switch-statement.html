@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement in JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var dayOfWeek = prompt("Enter week days");
+        var lowerDayOfWeek = dayOfWeek.toLocaleLowerCase();
+
+        switch (lowerDayOfWeek) {
+            case "sat":
+                alert("Saturday");
+                alert("Hello");
+                break;
+
+            case "sun":
+                alert("Sunday");
+                break
+
+            case "fri":
+                alert("Friday");
+                break
+
+            case "thur":
+                alert("Thursday");
+                break
+
+            case "wed":
+                alert("Wednesday");
+                break
+
+            case "tues":
+                alert("Tuesday");
+                break
+
+            case "mon":
+                alert("Monday");
+                break
+
+            default:
+                alert("Invalid Entry");
+        }
+    </script>
+</body>
+
+</html>
