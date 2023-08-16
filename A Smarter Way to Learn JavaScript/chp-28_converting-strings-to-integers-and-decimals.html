@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting strings to integers and decimals</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+
+<body>
+    <h1 class="head text-center">Smarter Way to Learn JavaScript</h1>
+    <h3 class="text-center">Chapter 28:</h3>
+    <h3 class="text-center">Converting Strings to Integers and Decimals</h3>
+
+    <script>
+
+        var currentAge = prompt("Enter your age");  //The value of prompt is always a string.
+        var stringNumber = prompt("Enter 18");  //This is a string number
+
+        document.write("Your Current Age is " + currentAge + "." + "</br>");
+        document.write("</br>" + "Your Age after ten year is " + currentAge + 10 + "." + "</br>");  //Addition is not working in this situation
+
+        var yearsEligibleToVote = currentAge - 18;  //Subtraction works properly
+        document.write("</br>" + "Your are eligible to cast vote for " + yearsEligibleToVote + " years." + "</br>")
+
+        var yearsEligibleToVote = currentAge - stringNumber;
+        document.write("</br>" + "Subtraction of two Strings is " + yearsEligibleToVote + " years." + "</br>")
+
+        var divideStingWithANumber = "100" / 5; //Division of String with a Number.
+        document.write("</br>" + 'Division of "100" and 5 is ' + divideStingWithANumber + "." + "</br>");
+
+        var divideNumberWithAString = 100 / "5";  //Division of Number with a String.
+        document.write("</br>" + 'Division of 100 and "5" is ' + divideNumberWithAString + "." + "</br>");
+
+        var divideStringWithAString = "100" / "5";  //Division of String with a String.
+        document.write("</br>" + 'Division of "100" and "5" is ' + divideStringWithAString + "." + "</br>");
+
+        var divideNumberWithANumber = 100 / 5;  //Division of Number with a Number.
+        document.write("</br>" + 'Division of 100 and 5 is ' + divideNumberWithANumber + "." + "</br>");
+
+        var profit = 200 - "duck";  // the value inside quotes will be a number not a charecter.
+        document.write("</br>" + '200 minus "duck" is ' + profit + "." + "</br>");    //It prints NaN (means Not a number).
+
+        var qualifyingAge = currentAge + 1;
+        document.write("</br>" + "Qualifying Age without converting a string to a number is " + qualifyingAge + " years." + "</br>")
+
+        var qualifyingAge = parseInt(currentAge) + 1;
+        document.write("</br>" + "Qualifying Age with converting a string to a number using parseInt is " + qualifyingAge + " years." + "</br>")
+
+        var qualifyingAge = parseFloat(currentAge) + 1;
+        document.write("</br>" + "Qualifying Age with converting a string to a number using parseFloat is " + qualifyingAge + " years." + "</br>")
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events:Link</title>
+  </head>
+  <body>
+    <div>
+      <a href="#" onClick="alert('Hi')">Click</a>
+    </div>
+
+    <div>
+      <!-- href="#" this tells the browser to reload the curent page -->
+      <a href="#" onClick="alert('Hi')">Click</a>
+    </div>
+
+    <div>
+      <!-- href="JavaScript:void(0)" this -->
+      <a href="JavaScript:void(0)" onClick="alert('Hi')">Click</a>
+    </div>
+
+    <div>
+      <a href="JavaScript:void(0)" onClick="var greet = 'Hi'; alert(greet);"
+        >Click</a
+      >
+    </div>
+
+    <div>
+      <!-- Function by passing parameter -->
+      <a href="JavaScript:void(0)" onClick="popUp('Hi')">Hi using function()</a>
+    </div>
+
+    <div>
+      <!-- innerHTML -->
+      <a href="JavaScript:void(0)" onClick="getinnerHTML()" id="greeting"
+        >getInnerHTML</a
+      >
+    </div>
+
+    <div>
+      <!-- innerText -->
+      <a href="JavaScript:void(0)" onClick="getInnertext()" id="greeting2"
+        >getinnerText</a
+      >
+    </div>
+
+    <div>
+      <!-- textContent -->
+      <a href="JavaScript:void(0)" onClick="getTextContent()" id="greeting3"
+        >getTextContent</a
+      >
+    </div>
+
+    <div>
+      <a href="JavaScript:void(0)" onClick="getOuterHTML()" id="greet1"
+        >getOuterHTML</a
+      >
+    </div>
+
+
+    <div>
+      <a href="JavaScript:void(0)" onClick="getOuterText()" id="greet2">getOuterText</a>
+    </div>
+
+
+    <!-- JavaScript Code -->
+    <script lang="javascript">
+      function popUp(message) {
+          alert(message);
+      }
+
+      function getinnerHTML() {
+        document.getElementById("greeting").innerHTML = "    Hello World! <span> span and span </spam> I'm InnerHTML";
+      }
+
+      function getInnertext() {
+        document.getElementById("greeting2").innerText = "    Hello    World! <span> span  and span    </spam> I'm InnerHTML";
+      }
+
+      function getTextContent() {
+        document.getElementById("greeting3").textContent = "   Hello   World!  <span> span    and span </spam>    I'm InnerHTML";
+      }
+
+      function getOuterHTML() {
+        document.getElementById("greet1").outerHTML = "  Hello World This is  <span> Hi </span>  outer HTML <P>    !";
+      }
+
+      function getOuterText() {
+        document.getElementById("greet2").outerText = "     Hello World This is  <span>   Hi   </span>  outer HTML   <P>  !"
+      }
+
+    </script>
+  </body>
+</html>

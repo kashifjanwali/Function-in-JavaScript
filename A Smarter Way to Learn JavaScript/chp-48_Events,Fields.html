@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event: Fields</title>
+  </head>
+  <body>
+    <!-- The keyword onFocus tells JavaScript to do something when the user clicks in
+    the field -->
+    <div>
+      Email: <br />
+      <input
+        type="email"
+        size="30"
+        onFocus="this.style.backgroundColor='yellow';" 
+        onBlur="this.style.backgroundColor='white';"
+      />
+    </div>
+    <div>
+      Password: <br />
+      <input id="password-field" type="password" size="30" onFocus="makeFieldYellow();" onBlur="makeFieldWhite();"/>
+    </div>
+
+
+    <script lang="javascript" src="./Scripts/chp-48_Events,Fields.js"></script>
+  </body>
+</html>

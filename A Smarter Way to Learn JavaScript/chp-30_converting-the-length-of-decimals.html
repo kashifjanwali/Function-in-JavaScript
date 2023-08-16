@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveerting the length of decimals</title>
+</head>
+
+<body>
+    <h1>Smarter way to learn JavaScript</h1>
+    <h3>Chapter 30</h3>
+    <h3>Converting the length of decimals</h3>
+
+    <script>
+        var priceOfTheItem = prompt("Enter price");
+        document.write("Price = $" + priceOfTheItem + "</br>");
+
+        var salesTax = (priceOfTheItem * 6.5) / 100;
+        document.write("Sales Tax = $" + salesTax + "</br>");
+        var prettySalesTax = salesTax.toFixed(2);
+        document.write("2 decimel Sales = $" + prettySalesTax + "</br>")
+
+        var totalPrice = parseInt(priceOfTheItem) + salesTax;
+        document.write("Total Price = $" + totalPrice + "</br>");
+
+        var decimalTotalPrice = totalPrice.toFixed(2);
+        document.write("2 decimal total price = $" + decimalTotalPrice + "</br>")
+    </script>
+</body>
+
+</html>

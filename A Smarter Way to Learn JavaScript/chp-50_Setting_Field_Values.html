@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting Field Values</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        ZIP:
+        <input type="text" id="zip" onBlur="fillCity()" size="5" />
+      </div>
+      <p>60608, 68114, 53212</p>
+
+
+      <br />
+
+      <div>
+        City:
+        <input type="text" id="city" size="15" />
+      </div>
+    </form>
+
+    <br />
+
+    <form>
+      <div>
+        Name:
+        <input type="text" id="name" size="20" onClick="fillPrefix()"/>
+      </div>
+
+      <br>
+
+      <div>
+        Phone Number:
+        <input type="text" id="phoneNumber" onClick="fillCountryCode()">
+      </div>
+    </form>
+
+    <script
+      lang="javascript"
+      src="./Scripts/chp-50_Setting_Field_Values.js"
+    ></script>
+  </body>
+</html>

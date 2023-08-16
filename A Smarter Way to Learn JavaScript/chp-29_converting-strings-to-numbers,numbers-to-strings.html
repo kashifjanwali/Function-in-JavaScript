@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting Strings to Numbers, Numbers to Strings</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+
+<body>
+    <h1 class="head text-center">Smarter Way to Learn JavaScript</h1>
+    <h3 class="text-center">Chapter 29</h3>
+    <h3 class="text-center">Converting Strings to Numbers, Numbers to Strings</h3>
+
+    <script>
+
+        var stringNumber = prompt("Enter a Number");
+        var validNumber = Number(stringNumber);
+        document.write('The entered string number is now convertd into a valid number by using  Number("' + stringNumber + '")' + "  method is " + validNumber + "." + "</br>")
+
+        var numberAsNumber = 1234;
+        var numberAsString = numberAsNumber.toString();
+        document.write("</br>" + "The entered Number as Number is now converted into a String-Number by using " + numberAsNumber + '.toString() Method is "' + numberAsString + '"' + "</br>")
+
+
+
+    </script>
+</body>
+
+</html>

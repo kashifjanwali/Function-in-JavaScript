@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swapping Images</title>
+  </head>
+  <body>
+    <img
+      src="./Images/Blue-Cute-Bird.jpg"
+      alt="Cute Bird"
+      id="beforePic"
+      onMouseover="swapPic('beforePic', './Images/dancing-bird.png');"
+      onclick="swapPic('beforePic', './Images/dog.jpg');"
+      ondblclick="swapPic('beforePic', 'Images/cute-little-lion-mammal.png');"
+      onMouseout="swapPic('beforePic', './Images/Blue-Cute-Bird.jpg');"
+    />
+    <!--  When user move the mouse over the existing pic and then remove the mouse the existing pic changes and vise versa -->
+
+    <script
+      lang="javascript"
+      src="./Scripts/chp-53_Swapping_Images.js"
+    ></script>
+  </body>
+</html>

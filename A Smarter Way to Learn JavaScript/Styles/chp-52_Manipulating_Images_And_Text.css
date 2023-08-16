@@ -1,0 +1,13 @@
+.hidden {
+    display: none;
+}
+
+.simplePara {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+}
+
+.bigPara {
+    font-size: 2em;
+    font-style:italic;
+}

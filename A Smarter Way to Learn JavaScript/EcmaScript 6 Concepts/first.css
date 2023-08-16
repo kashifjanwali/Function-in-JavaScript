@@ -1,0 +1,28 @@
+body {
+  background-color: green;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: cornflowerblue;
+}
+
+h2 {
+  color: yellowgreen;
+}
+
+h3 {
+  color: chocolate;
+}
+
+h4 {
+  color: white;
+}
+
+h5 {
+  color: darkgray;
+}
+
+h6 {
+  color: darkorange;
+}

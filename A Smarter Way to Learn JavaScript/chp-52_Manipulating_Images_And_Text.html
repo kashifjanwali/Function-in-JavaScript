@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating Images And Text</title>
+    <link
+      rel="stylesheet"
+      href="./Styles/chp-52_Manipulating_Images_And_Text.css"
+    />
+  </head>
+  <body>
+    <h3>Whe you on the image, it vanishes</h3>
+    <img
+      src="./Images/cat.jpg"
+      alt="Cat"
+      id="blobfish"
+      onClick="makeInvisible();"
+    />
+    <p>When you mouse over the paragraph:"This is a  big paragraph" its style and size changes, when you click on the changed paragrah its size doubles</p>
+
+    <p id="p1" onMouseover="para()" onClick="makeBig()">This is a big paragraph</p>
+
+    <script
+      lang="javascript"
+      src="./Scripts/chp-52_Manipulating_Images_And_Text.js"
+    ></script>
+  </body>
+</html>
