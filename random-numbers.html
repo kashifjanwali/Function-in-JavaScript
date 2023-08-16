@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+    <button class="btn btn-primary" onclick="randoms()">All Random Numbers</button>
+    <button class="btn btn-primary" onclick="even()">Even Random Numbers</button>
+    <button class="btn btn-primary" onclick="odd()">Odd Random Numbers</button>
+    <button class="btn btn-primary" onclick="odd()">Number Functions</button>
+    <script>
+        function randoms() {
+            var minNumber = Number(prompt("Enter Your Minimum Number:"));
+            var maxNumber = Number(prompt("Enter Your Maximum Number:"));
+            var sum = 0;
+            for (var i = minNumber; i < maxNumber; i++) {
+                var resultRandom = Math.random() * (maxNumber - minNumber) + minNumber;
+                var finalResult = Math.floor(resultRandom);
+                sum += finalResult;
+                document.write("Result Random Number === " + finalResult + "</br>");
+            }
+            document.write("Sum of all random numbers: " + sum);
+        }
+
+        function even() {
+            var minNumber = Number(prompt("Enter Your Minimum Number:"));
+            var maxNumber = Number(prompt("Enter Your Maximum Number:"));
+            for (var i = minNumber; i < maxNumber; i++) {
+                var resultRandom = Math.random() * (maxNumber - minNumber) + minNumber;
+                var finalResult = Math.floor(resultRandom);
+                if (finalResult % 2 == 0) {
+                    document.write(finalResult + " is an even number." + "</br>" + "</br>")
+                }
+            }
+
+        }
+
+        function odd() {
+            var minNumber = Number(prompt("Enter Your Minimum Number:"));
+        var maxNumber = Number(prompt("Enter Your Maximum Number:"));
+        for (var i = minNumber; i < maxNumber; i++) {
+            var resultRandom = Math.random()*(maxNumber-minNumber)+minNumber;
+            var finalResult = Math.floor(resultRandom);
+        if (finalResult % 2 !== 0) {
+            document.write(finalResult+" is odd number."+"</br>"+"</br>")
+        }
+        }
+        }
+
+        function numFunction() {
+            var randomNumber = Math.random()*300;
+        var randomNum = Math.floor(randomNumber);
+        document.write(randomNumber+"</br>");
+        document.write(randomNum);
+        }
+    </script>
+
+</body>
+
+</html>
