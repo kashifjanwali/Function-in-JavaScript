@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Case in JavaScript</title>
+</head>
+
+<body>
+
+    <!-- HTML -->
+    <p>This was an example of Changing Case in JavaScript</p>
+
+    <script>        //JavaScript Code
+
+        function isChangingcase() {
+
+            var cityToCheck = prompt("Enter YourCity Name");
+            cityToCheck = cityToCheck.toLowerCase();
+
+            /* Reference Link : https://www.economy.pk/top-10-cities-of-pakistan-based-on-population/ */
+
+            var mostPopulatedCities = ["karachi", "lahore", "faisalabad", "rawalpindi", "gujranwala", "peshawar", "multan", "hyderabad", "islamabad", "quetta"];
+
+            for (var i = 0; i < 10; i++) {
+
+                if (cityToCheck == mostPopulatedCities[i]) {
+                    alert(cityToCheck + " is one of the most populated city in Pakistan.");
+                }
+            }
+
+        }
+        isChangingcase()
+
+    </script>
+</body>
+
+</html>
