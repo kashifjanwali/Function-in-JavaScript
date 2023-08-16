@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+<body>
+    
+
+    <script>
+        var minNumber = Number(prompt("Enter Your Minimum Number:"));
+        var maxNumber = Number(prompt("Enter Your Maximum Number:"));
+        for (var i = minNumber; i < maxNumber; i++) {
+            var resultRandom = Math.random()*(maxNumber-minNumber)+minNumber;
+            var finalResult = Math.floor(resultRandom);
+        if (finalResult % 2 == 0) {
+            document.write(finalResult+" is an even number."+"</br>"+"</br>")
+        }
+        }
+    </script>
+</body>
+</html>
