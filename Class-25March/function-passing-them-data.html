@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions, Passing them data</title>
+</head>
+<body>
+    
+
+    <script>
+        function greetings(a) {
+            alert(a);
+        }
+        var a = prompt("Enter any value");
+        greetings(a);
+
+        function showMessage(start, mid, end) {
+            alert(start + " " + mid + " " + end);
+        }
+        var start = "Hello";
+        var mid = "This is Kashif Hussain";
+        var end = "How are you?";
+        showMessage(start, mid, end);
+
+        function calTotal(merchTotal) {
+            var orderTotal;
+            if (merchTotal >= 100) {
+                orderTotal = merchTotal;
+            }
+
+            else if (merchTotal < 50.01) {
+                orderTotal = merchTotal + 5;
+            }
+
+            else {
+                orderTotal = merchTotal + 5 + 0.03 * (merchTotal - 50);
+            }
+
+            return orderTotal;
+        }
+
+        var merchantTotal = prompt("Enter value upto 100");
+        var totalValue = calTotal(parseFloat(merchantTotal ));
+        alert(totalValue);
+
+    </script>
+</body>
+</html>
